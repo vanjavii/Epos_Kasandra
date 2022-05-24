@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-image: url(slicice/pozadine/finalna.jpg);
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+
+        ::-webkit-scrollbar-thumb {
+            background:hotpink;
+            border-radius: 10px;
+        }
+
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: purple;
+        }
+    </style>
+    <title>Parfemi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="shortcut icon" type="image/png" href="slike/icon.jpg">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <ul id="GlavniMeni" class="meni1">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="oNama.html">O Nama</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a class="active" href="parfemZaMene.html">Parfem za mene</a></li>
+    </ul>
+
+
+
+    <div id="forma">
+        <form>
+            Ime:<br>
+            <input type="text" name="ime" id="ime"><br>
+            Prezime:<br>
+            <input type="text" name="prezime" id="prezime"><br><br>
+            <input type="radio" name="pol" value="musko" checked id="muski"> Muško<br>
+            <input type="radio" name="pol" value="zensko"> Žensko<br><br>
+
+
+            Izaberi gornju notu parfema iz snova:<br>
+            <select name="vrsta" size="3" id="element">
+                <option value="narandža">Narandža</option><br>
+                <option value="bergamot">Bergamot</option><br>
+                <option value="amber">Amber</option><br>
+                <option value="heliotrop">Heliotrop</option><br>
+                <option value="magnolija">Magnolija</option><br>
+            </select><br><br>
+
+            Izaberi donju notu parfema iz snova:<br>
+            <select name="vrsta" size="3" id="element">
+                <option value="jorgovan">Jorgovan</option><br>
+                <option value="vanila">Vanila</option><br>
+                <option value="crnaRibizla">Crna ribizla</option><br>
+                <option value="pačuli">Pačuli</option><br>
+                <option value="beliMošus">Beli mošus</option><br>
+            </select><br><br>
+
+            E-mail:<br>
+            <input type="email" name="mail" id="email"><br><br>
+
+
+
+            <input type="checkbox" id="zanimljivosti" onclick="myFunction1()">Saglasan/na sam da dobijam obaveštenja o akcijama, novitetima i raznim drugim zanimljivostima putem mejla!<br>
+
+            <p id="text" style="display:none">Naša ekipa će gledati da u što kraćem roku odredi koji je savršen parfem za vas, o čemu ćete biti obavešteni putem mejla koji ste ostavili!<br></p><br>
+
+            <input type="button" value="Spreman/na da otkrijem!" onclick="posaljiFormu()">
+            <input type="reset" id="resetuj" value="Ponovno unesi">
+
+        </form>
+    </div>
+
+
+
+
+
+
+    <div class="footer">
+        <div>
+            <h4>Kasandra</h4>
+            <ul class="meni2">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="oNama.html">O Nama</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a class="active" href="parfemZaMene.html">Parfem za mene</a></li>
+            </ul>
+        </div>
+        <div class="social-sekcija">
+            <a href="https://www.facebook.com/pokemon" target="blank" class="fa fa-3x fa-facebook"></a>
+            <a href="https://www.instagram.com/pokemon" target="blank" class="fa fa-3x fa-instagram"></a>
+            <a href="https://www.youtube.com/pokemon" target="blank" class="fa fa-3x fa-youtube"></a>
+        </div>
+        <div class="trademark-sekcija">
+            <span id="date"></span><span> KASANDRA 2020. </span>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

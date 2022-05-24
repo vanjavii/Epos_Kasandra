@@ -1,0 +1,41 @@
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+ 
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+ 
+  .fa-facebook {
+    background:grey;
+    color: white;
+  }
+  
+
+  .fa-instagram{
+    background:grey;
+    color: white;
+  }
+  
+
+  .fa-youtube {
+    background: GREY;
+    color: white;
+  }
+  
+
+  .social-sekcija{
+      display: flex;
+      align-items: right;
+
+  }
+
+  .social-sekcija a+a{
+      margin-left: 5px;
+  }
